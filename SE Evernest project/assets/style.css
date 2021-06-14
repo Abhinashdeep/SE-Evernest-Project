@@ -51,6 +51,6 @@ nav .active .nav-icon {
 }
 
 .login_background_image{
-    background-image: url(../../images/login_background.png);
+    background-image: url(../images/login_background.png);
     background-size: cover;
 }
