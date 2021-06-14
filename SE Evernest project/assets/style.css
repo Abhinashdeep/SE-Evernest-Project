@@ -1,0 +1,56 @@
+.btn-danger,
+.bg-danger {
+    background-color: rgb(196, 55, 37) !important;
+}
+
+.btn-danger:hover {
+    background-color: rgb(175, 47, 30) !important;
+}
+
+.btn-primary,
+.bg-primary {
+    background-color: rgb(36, 108, 255) !important;
+}
+
+.btn-primary:hover {
+    background-color: rgb(31, 93, 216) !important;
+}
+
+.btn-outline-danger {
+    border-color: rgb(196, 55, 37) !important;
+}
+
+.btn-outline-danger:hover {
+    background-color: rgb(175, 47, 30) !important;
+    color: #fff !important;
+}
+.addQuestionTip{
+    background-color: rgb(234, 240, 255) !important;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: rgb(36, 108, 255) !important;
+}
+nav .nav-icon {
+    font-size: 20px;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+nav .active .nav-icon {
+    border-bottom: 3px solid rgb(196, 55, 37);
+    color: rgb(196, 55, 37);
+    ;
+    padding-bottom: 10px;
+}
+
+.dropdown-item:active {
+    background-color: rgb(196, 55, 37);
+}
+
+.login_background_image{
+    background-image: url(../../images/login_background.png);
+    background-size: cover;
+}

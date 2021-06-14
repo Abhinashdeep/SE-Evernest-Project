@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Libraries -->
+    <link rel="stylesheet" href="assets/fontawesome/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+
+    <title>Evernest</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md bg-light navbar-light border-bottom py-0">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Evernest</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a href="index.html" class="nav-link"><i class="nav-icon fas fa-home"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="nav-icon fas fa-suitcase"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="nav-icon fas fa-music"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="nav-icon fas fa-football-ball"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="nav-icon fas fa-laptop-code"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="nav-icon fas fa-bell"></i></a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <input type="search" class="form-control mr-2" placeholder="Search Evernest">
+                    <button class="btn btn-outline-secondary"><i class="fas fa-search"></i></button>
+                </form>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                            <i class="fas fa-user"></i> Profile
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="password.html" class="dropdown-item disabled">
+                                <i class="fas fa-lock"></i> Change Password
+                            </a>
+                            <a href="settings.html" class="dropdown-item">
+                                <i class="fas fa-cog"></i> Settings
+                            </a>
+                            <a href="#logoutModal" class="dropdown-item" data-toggle="modal">
+                                <i class="fas fa-user-times"></i> Logout
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a data-toggle="modal" data-target="#addPostModal"
+                            class="nav-link btn btn-danger rounded-pill text-white">
+                            Add Question
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- MODALS -->
+
+    <!-- POST MODAL -->
+    <div id="addPostModal" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content p-4">
+                <div class="modal-header text-dark border-bottom text-white">
+                    <h5 class="modal-title">Add question</h5>
+                    <button class="btn text-dark close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="addQuestionTip">
+                        <ul class="list-group list-unstyled">
+                            <strong>Tips on getting good answers quickly</strong>
+                            <li class="p-1">- Make sure your question has not been answered already</li>
+                            <li class="p-1">- Keep your question short and to the point</li>
+                            <li class="p-1">- Double-check grammer and spelling</li>
+                        </ul>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <Label>Your Question</Label>
+                            <input class="form-control" type="text"
+                                placeholder="Start your question with 'Why', 'How', 'What', etc.">
+                        </div>
+                        <div class="form-group">
+                            <Label>Topic</Label>
+                            <select class="form-control">
+                                <option>General</option>
+                                <option>Business</option>
+                                <option>Entertainment</option>
+                                <option>Sport</option>
+                                <option>Technology</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <Label>Upload Image</Label>
+                            <div class="custom-file">
+                                <Label class="custom-file-label">Choose Image</Label>
+                                <input type="file" class="custom-file-input">
+                                <small class="text-muted">Max Size 3MB</small>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal">Cancel</button>
+                    <button class="btn btn-primary rounded-pill" data-dismiss="modal">Add question</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOGOUT MODAL -->
+    <div id="logoutModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-secondary text-white">
+                    <h5 class="modal-title">Ready to Leave?</h5>
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">All unsaved work will be lost! You will not be able to login back until your session
+                        has expired.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <a href="logout.html" class="btn btn-danger">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/popper.min.js"></script>
+    <script src="assets/bootstrap.min.js"></script>
+</body>
+
+</html>
