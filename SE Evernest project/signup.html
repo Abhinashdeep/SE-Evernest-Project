@@ -33,19 +33,20 @@
                             <h4>Account Signup</h4>
                         </div>
                         <div class="card-body">
+                            <form action="logging.php" method="POST">
                             <form action="index.html">
                                 <div class="form-group">
                                     <label for="email">Name</label>
                                     <input type="text" class="form-control"
-                                        placeholder="What would you like to be called?">
+                                        placeholder="What would you like to be called?" name="Name">
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Email</label>
-                                    <input type="email" class="form-control" placeholder="Your email">
+                                    <input type="email" class="form-control" placeholder="Your email" name="Email">
                                 </div>
                                 <div class="form-group">
                                     <label for="password">Password</label>
-                                    <input type="password" class="form-control" placeholder="Your password">
+                                    <input type="password" class="form-control" placeholder="Your password" name="Password">
                                 </div>
                                 <small class="mb-2 d-block">
                                     <a href="login.html">
@@ -53,6 +54,7 @@
                                     </a>
                                 </small>
                                 <a href="topicInterest.html" class="btn btn-primary btn-block">Sign up</a>
+                            </form>
                             </form>
                         </div>
                     </div>
