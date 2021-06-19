@@ -1,0 +1,19 @@
+<?php
+$Name = $_POST['Name'];
+$Email = $_POST['Email'];
+$Password = $_POST['Password'];
+
+// Code for database connection
+$conn = new mysqli('localhost' , 'root', '' ,'evernest');
+
+if(conn->connect_error){
+die('Connection Failed :'.$conn->connection_error);
+else{
+  $stmt= $conn->prepare("insert into registration(Name,Email,Password)values (?,?,?)");
+  $stmt->execute();
+  echo "Succefully logged in..";
+  $stmt->close();
+  $conn->close();
+}
+}
+?>
